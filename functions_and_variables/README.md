@@ -1,1 +1,1 @@
-These are the gear started in C
+#These are the gear starter in C
