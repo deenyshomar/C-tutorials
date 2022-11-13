@@ -12,24 +12,40 @@ int main(void)
 	int a, b, result;
 	char operator;
 
-	printf("Enter 2 operand: ");
-	scanf("%d %d", &a, &b);
+	printf("Enter first operand: ");
+	scanf("%d", &a);
 
 	printf("Enter an operator: ");
-	scanf("%c", &operator);
+	scanf(" %c", &operator);
+
+	printf("Enter second operand: ");
+	scanf("%d", &b);
 
 	switch (operator)
 	{
 	case '+':
 	{
 		result = a + b;
-		printf("%d \n", result);
 		break;
 	}
 	case '-':
 	{
 		result = a - b;
-		printf("%d \n", result);
+		break;
+	}
+	case '*':
+	{
+		result = a * b;
+		break;
+	}
+	case '/':
+	{
+		result = a / b;
+		break;
+	}
+	case '%':
+	{
+		result = a % b;
 		break;
 	}
 	default:
@@ -37,5 +53,6 @@ int main(void)
 		printf("Invalid operator\n");
 	}
 	}
+	printf("result is : %d\n", result);
 	return (0);
 }
