@@ -11,13 +11,14 @@
  */
 int main(void)
 {
-	char ds;
+
 	int i;
 
-	ds[11] = "deenyshomar";
+	char ds[11] = "deenyshomar";
 	for (i = 0; i <= 11; i++)
 	{
 		putchar(ds[i]);
+		putchar('\n');
 	}
 	putchar('\n');
 	return (0);
