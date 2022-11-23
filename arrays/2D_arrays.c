@@ -14,7 +14,7 @@ int main()
 		}
 	}
 
-	printf("The matrix are : \n");
+	printf("The matrix is : \n");
 
 	for (i = 0; i < 2; i++)
 	{
@@ -25,6 +25,18 @@ int main()
 		}
 		putchar('\n');
 	}
-	printf("sum is : %d\n", sum);
+
+
+	printf("The tranpose of the matrix is :\n");
+
+	for (i = 0; i < 3; i++)
+	{
+		for (j = 0; j < 2; j++)
+		{
+			printf("%d\t", a[j][i]);
+		}
+		putchar('\n');
+	}
+	printf("sum of all the arrays is : %d\n", sum);
 	return (0);
 }
