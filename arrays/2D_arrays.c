@@ -25,8 +25,6 @@ int main()
 		}
 		putchar('\n');
 	}
-
-
 	printf("The tranpose of the matrix is :\n");
 
 	for (i = 0; i < 3; i++)
@@ -38,5 +36,7 @@ int main()
 		putchar('\n');
 	}
 	printf("sum of all the arrays is : %d\n", sum);
+
+	putchar('\n');
 	return (0);
 }
