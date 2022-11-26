@@ -60,7 +60,7 @@ int main()
 				multi = 0;
 				for (k = 0; k < m; k++)
 				{
-			        	multi = multi + (a[i][k] * b[k][j]);
+			        	multi + a[i][k] * b[k][j];
 				}
 				multi = c[i][j];
 			}
