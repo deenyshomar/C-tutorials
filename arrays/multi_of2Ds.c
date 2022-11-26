@@ -1,15 +1,27 @@
 #include <stdio.h>
 #define N 50
-int main()
+
+/**
+ * main - Entry point
+ *
+ * Description: program that multiply 2 matrix i.e arrays matrices
+ *
+ * Return: Always 0 (Success)
+ *
+ * programmed by: deenyshomar
+ *
+ */
+
+int main(void)
 {
 	int a[N][N], b[N][N], c[N][N];
 	int m,n,p,q; // variables of first and second matrix
 	int i,j,k; // the iteration variables
 	int multi;
 
-	printf("Enter number of rows and colums for the first matrix 'm and n' : \n");
+	printf("\nEnter number of rows and colums of the first matrix : \n\n");
 	scanf("%d %d", &m, &n);
-	printf("Enter the elements of first matrix : \n");
+	printf("\nEnter the elements of first matrix : \n\n");
 	for (i = 0; i < m; i++)
 	{
 		for (j = 0; j < n; j++)
@@ -17,9 +29,9 @@ int main()
 			scanf("%d", &a[i][j]);
 		}
 	}
-	printf("Enter number of rows and colums for the second matrix 'p and q' : \n");
+	printf("\nEnter number of rows and colums of the second matrix : \n\n");
 	scanf("%d %d", &p, &q);
-	printf("Enter the elements of second matrix : \n");
+	printf("\nEnter the elements of second matrix : \n\n");
 	for (i = 0; i < p; i++)
 	{
 		for (j = 0; j < q; j++)
@@ -27,7 +39,7 @@ int main()
 			scanf("%d", &b[i][j]);
 		}
 	}
-	printf("The firts matrix is : \n");
+	printf("\nThe firts matrix is : \n\n");
 	for (i = 0; i < m; i++)
 	{
 		for (j = 0; j < n; j++)
@@ -36,7 +48,7 @@ int main()
 		}
 	putchar('\n');
 	}
-	printf("The second matrix is : \n");
+	printf("\nThe second matrix is : \n\n");
 	for (i = 0; i < p; i++)
 	{
 		for (j = 0; j < q; j++)
@@ -48,7 +60,7 @@ int main()
 
 	if (n != p)
 	{
-		printf("The matrix can't be multiply!\n");
+		printf("\nThe matrices can't be multiply!\n\n");
 	}
 	else
 	{
@@ -61,11 +73,11 @@ int main()
 				for (k = 0; k < m; k++)
 				{
 			        	c[i][j] = c[i][j] + a[i][k] * b[k][j];
-				};
+				}
 			}
 		}
 
-		printf("The value of the multiply matrix is : \n");
+		printf("\nThe product of the 2 matrices is : \n\n");
 		for (i = 0; i < m; i++)
 		{
 			for (j = 0; j < q; j++)
@@ -75,4 +87,5 @@ int main()
 			putchar('\n');
 		}
 	}
+	putchar('\n');
 }
