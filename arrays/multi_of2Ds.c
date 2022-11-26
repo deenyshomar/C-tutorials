@@ -57,12 +57,11 @@ int main()
 		{
 			for (j = 0; j < q; j++)
 			{
-				multi = 0;
+				c[i][j] = 0;
 				for (k = 0; k < m; k++)
 				{
-			        	multi + a[i][k] * b[k][j];
-				}
-				multi = c[i][j];
+			        	c[i][j] = c[i][j] + a[i][k] * b[k][j];
+				};
 			}
 		}
 
