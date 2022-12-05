@@ -13,15 +13,15 @@ int main()
 
 	printf("%d, %d, %d\n", (*p)++, (*p)++, *(++p));//this will print 5, 4, 4 & update the p value to 6
 
-	printf("%d\n", *p); // this will print 6
+	printf("%d\n", *p); // this will print 6 at index [1]
 
-	printf("%d\n", (*p)++); // this will print 6 & update the p value to 7
+	printf("%d\n", (*p)++); // this will print 6 & update the p value to 7 at index [1]
 
-	printf("%d\n", (*p)++); // this will print 7 & update the p value to 8
+	printf("%d\n", (*p)++); // this will print 7 & update the p value to 8 at index [1]
 
 	printf("%d\n", *p); // this will print 8
 
-	q--; // this updated the q value to 6
+	q--; // this updated the q value to 6 (shifted to index [2])
 
 	printf("%d\n", (*(q + 2))--); // this will print 1, & update the q value to 6
 
